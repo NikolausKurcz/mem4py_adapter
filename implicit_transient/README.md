@@ -8,4 +8,6 @@ To run example:
   pip3 install -e .  
 
     
-2) Install Openfoam 2212, Precice 2.5 and pyprecice   
+2) Install Openfoam 2212, Precice 2.5 and pyprecice     
+3) In one Terminal run ./Allrun from Fluid folder    
+4) In other Terminal run python3 main.py from Solid Folder  
