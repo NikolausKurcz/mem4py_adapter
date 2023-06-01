@@ -1,0 +1,35 @@
+// ************************************************************************* //
+
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      dynamicMeshDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+dynamicFvMesh dynamicMotionSolverFvMesh;
+
+motionSolverLibs ("libfvMotionSolvers.so" "libRBFMeshMotionSolver.so");
+
+// Radial basis function solver
+solver RBFMeshMotionSolver;
+
+RBFMeshMotionSolverCoeffs
+{
+    // Settings for the RBF solver
+    staticPatches    ();
+    movingPatches    (bottomWall);
+    fixedPatches     (inlet outlet fixedWalls movingWall);
+    interpolation
+    {
+        function     TPS;
+    }
+    coarsening
+    {
+        enabled      no;
+    }
+}
