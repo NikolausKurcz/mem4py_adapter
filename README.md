@@ -14,3 +14,9 @@ Uses:
 mem4py (https://github.com/pthedens/mem4py)  
 preCICE 2.5  
 OpenFOAM-2212  
+
+
+In Implicit transient there is a kind of working example and in transient_rbf it is the same but with the RBFMeshMotionSolver from: https://github.com/solids4foam/solids4foam/tree/master/src/RBFMeshMotionSolver  
+
+The results with the fiffernet mesh motion ony differ slightly:   
+
