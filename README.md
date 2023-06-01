@@ -20,4 +20,4 @@ In Implicit transient there is a kind of working example and in transient_rbf it
 
 The results with the fiffernet mesh motion ony differ slightly:   
 
-https://raw.githubusercontent.com/NikolausKurcz/mem4py_adapter/630eb5e6b490d8aaacc33a75204617540fbdd09d/Y_displacement.svg
+![Alt text](https://raw.githubusercontent.com/NikolausKurcz/mem4py_adapter/630eb5e6b490d8aaacc33a75204617540fbdd09d/Y_displacement.svg)
